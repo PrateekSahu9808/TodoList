@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,300&family=Poppins:wght@300&family=Roboto+Slab:wght@300&family=Yanone+Kaffeesatz:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Nunito", sans-serif;
+}
+.main {
+  background-color: #d5cb5e;
+  height: 100vh;
+  padding: 50px;
+  /* background-image: url(./image/bgr1.jpg);
+  background-size: cover; */
+}
+.main > article {
+  width: 40%;
+  margin: 0 auto;
+  /* background-color: blueviolet; */
+  height: 100%;
+  padding: 50px;
+}
+.card {
+  background-color: #ffff;
+  /* height: 105; */
+  box-shadow: 0 1px 0 0.5px black;
+  border: none;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.card > h1 {
+  font-size: 1.7rem;
+}
+.addItem {
+  /* border: 1px solid red; */
+  height: 15%;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+.addItem > input {
+  width: 90%;
+  height: 70%;
+  border-radius: 4px;
+  border: 0.5px solid #ccc;
+  outline: none;
+  padding: 10px;
+  font-size: medium;
+  color: #1d1d1d;
+}
+.addItem > span {
+  background-color: #8f48e8;
+  color: #ffffff;
+  width: 11.5%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-radius: 3px;
+}
+.showItem {
+  height: 300px;
+  overflow: scroll;
+  padding-top: 20px;
+}
+.showItem::-webkit-scrollbar {
+  display: none;
+}
+.each {
+  background-color: #f2f2f2;
+  border-radius: 1px;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  align-items: center;
+  padding-left: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.each > div {
+  /* border: 1px solid brown; */
+  height: 100%;
+  width: 19%;
+  display: flex;
+  cursor: pointer;
+}
+.each > div > :nth-child(1) {
+  background-color: #5ec4d5;
+  color: #ffffff;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.each > div > :nth-child(1) > i {
+  width: 50%;
+  font-size: 1rem;
+}
+.each > div > :nth-child(2) {
+  background-color: #e64e3d;
+  color: #ffffff;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 5px 5px 0;
+}
+.each > div > :nth-child(2) > i {
+  text-align: center;
+  width: 50%;
+  font-size: 1rem;
+}
+.btn {
+  /* border: 1px solid red; */
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+}
+.btn h1 {
+  font-size: medium;
+}
+.btn > button {
+  padding: 6px 13px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background-color: #8f4ae8;
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  outline: none;
+  border: 1px solid #8f4ae8;
+  border-radius: 4px;
+  letter-spacing: 1.5px;
+}
